@@ -1,0 +1,10 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<div id="about-me">
+    <h3>@Model.Rendering.Item.Name</h3>
+    <p>@Html.Sitecore().Field("Description", Model.Rendering.Item)</p>
+</div>

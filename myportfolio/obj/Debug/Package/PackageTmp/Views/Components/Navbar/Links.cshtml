@@ -1,0 +1,13 @@
+﻿@model myportfolio.Models.Navigation.Links
+<div id="navbar">
+    <ul>
+        @foreach (var item in @Model.MenuLinks)
+            {
+                <li>
+                    <a href="@item.URL" title="@item.Title" rel="nofollow" target="_blank">
+                        @item.Title
+                    </a>
+                </li>
+            }
+    </ul>
+</div>

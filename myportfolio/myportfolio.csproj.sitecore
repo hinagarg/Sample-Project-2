@@ -1,0 +1,18 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="myportfolio" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <File Include="Views\Layouts\Default.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/Layouts/Default.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{E39DF078-1925-42C2-9F99-04194216523A}</Item>
+  </File>
+  <File Include="Views\Components\Three Columns\ThreeColumns.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{433F03EF-4CC6-4E63-9D8B-7EB636EC05AD}</Item>
+  </File>
+  <File Include="Models\Navigation\Links.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{DFFF2B56-44A7-46CA-B5EB-C4727A9E0BB7}</Item>
+  </File>
+  <File Include="Views\Components\Navbar\Links.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{00B31A9F-1EB9-473D-BBCC-2AE32B28FE16}</Item>
+  </File>
+</Project>

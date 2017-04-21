@@ -1,0 +1,33 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+  Layout = null;
+}
+<html>
+<head>
+  <link href="/Presentation/dist/assets/css/style.css" rel="stylesheet">
+  <link href="/Presentation/dist/assets/css/bootstrap.min.css" rel="stylesheet">
+  <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
+  @Html.Sitecore().VisitorIdentification()
+</head>
+<body>
+    <h1>@Html.Sitecore().Field("title")</h1>
+      <div>
+          @Html.Sitecore().Placeholder("header")
+      </div>
+    <div id= "main">
+      @Html.Sitecore().Placeholder("main")
+    </div>
+      <div>
+          @Html.Sitecore().Placeholder("footer")
+      </div>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="/Presentation/dist/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

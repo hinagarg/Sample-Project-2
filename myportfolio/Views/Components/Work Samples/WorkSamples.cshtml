@@ -1,0 +1,11 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<div id="work-samples">
+    @Html.Sitecore().Field("Image", Model.Rendering.Item, new { w = 320, h = 200, hspace = 5, vspace = 5, @class = "project-image"})           
+   <p><strong>Project Title:</strong>@Html.Sitecore().Field("Title", Model.Rendering.Item)</p>
+   <p>@Html.Sitecore().Field("Read More", Model.Rendering.Item, new { text = "Read more about this project"})</p>
+</div>
